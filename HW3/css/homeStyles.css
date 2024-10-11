@@ -1,0 +1,105 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    background-color: aqua;
+    margin: 10px 0 0 10px;
+    padding: 0;
+}
+
+main {
+    background-color: #00ABE4;
+    font-size: 24px;
+    display: grid;
+    grid-template-rows: 15vh 7vh 76vh;
+}
+
+header {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+    padding-top: 30px;
+}
+
+nav {
+    padding-top: 10px;
+    border: 1px solid dodgerblue;
+}
+
+a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: blue;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-areas: "header side"
+                         "main side"
+                         "footer side";
+    grid-template-rows: 20% 65% 15%;
+    grid-template-columns: 80% 20%;
+}
+
+h2 {
+    text-align: center;
+    grid-area: header;
+}
+
+#side {
+    grid-area: side;
+    border: 1px solid dodgerblue;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    grid-area: footer;
+    border: 1px solid black;
+}
+
+#headerImage {
+    float: left;
+    max-width: 75px;
+    position: relative;
+    left: 20px;
+    bottom: 15px;
+}
+
+#sideImage {
+    max-width: 100px;
+    margin-top: 40px;
+}
+
+#formContainer {
+    grid-area: main;
+    border: 1px solid black;
+    text-align: center;
+}
+
+label {
+    text-align: right;
+    margin-right: 10px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 30% 50%;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    row-gap: 20px;
+}
+
+label#games {
+    text-align: left;
+}
+input.games {
+    width: 20px;
+}
+button {
+    width: 100px;
+    height: 50px;
+    background-color: yellow;
+}
