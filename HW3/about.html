@@ -15,17 +15,14 @@
 
 <nav class="navbar navbar-expand-lg navbar-light navBack">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand">
             <img src="imgs/mario.png" alt="Mario with Pizza">
             <span class="brandTitle"> Mario's Pizza </span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="main.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html"><b>About Us</b></a>
@@ -36,21 +33,55 @@
 </nav>
 
 <h2>Tell us about you</h2>
+
 <main>
     <div class="container-fluid" id="mainContainer">
+        <label for="name"> Name
+            <input id="name" type="text">
+        </label>
+        <label for="age"> Age
+            <input id="age" type="text">
+        </label>
 
+        <div class="container-fluid" id="innerInputContainer">
+            <div>
+                <h3>Favorite Topping</h3>
+                <select style="width: 50%; margin-bottom: 30px" class="form-select" aria-label="Select">
+                    <option selected>Select</option>
+                    <option value="1">Extra Cheese</option>
+                    <option value="2">Sausage</option>
+                    <option value="3">Pepperoni</option>
+                </select>
+            </div>
+            
+            <div>
+                <h3>Favorite Games</h3>
+                <label for="check1">
+                    Mario Cart
+                    <input id="check1" type="checkbox">
+                </label>
+                <label for="check2">
+                    Mario Party
+                    <input id="check2" type="checkbox">
+                </label>
+                <label for="check3">
+                    Super Smash Bro
+                    <input id="check3" type="checkbox">
+                </label>
+                <div><button type="button" class="btn btn-primary">Submit</button></div>
+            </div>
+        </div>
     </div>
     <img id="marioGo" src="imgs/marioGo.jpg" alt="Mario Cheer!">
 </main>
 
 <nav style="padding: 20px" class="navbar navbar-expand-lg navbar-light navBack">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <span class="brandFooter"> Portfolio: </span>
-        </a>
+        <span class="brandFooter"> Portfolio: </span>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a style="text-decoration: underline; font-size: 1.2em" class="nav-link active" aria-current="page" href="https://eubanksch81.github.io/">https://eubanksch81.github.io/</a>
+                <a style="text-decoration: underline; font-size: 1.2em" class="nav-link active" aria-current="page"
+                   href="https://eubanksch81.github.io/">https://eubanksch81.github.io/</a>
             </li>
         </ul>
     </div>

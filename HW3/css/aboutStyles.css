@@ -6,8 +6,6 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
     background-color: aqua;
 }
 
@@ -15,16 +13,26 @@ h2 {
     padding: 40px 0 10px 20px;
 }
 
+b {
+    font-size: 1.1em;
+}
+
 main {
-    border: 1px solid black;
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 75% 25%;
 }
 
 #mainContainer {
     border: 1px solid black;
     margin-left: 20px;
-    width: 70%;
+    width: 100%;
+}
+
+#innerInputContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 10px;
+    column-gap: 20px;
 }
 
 img {
@@ -32,7 +40,7 @@ img {
 }
 
 img#marioGo {
-
+    margin-left: 40px;
 }
 
 .brandTitle {
@@ -43,6 +51,26 @@ img#marioGo {
 .brandFooter {
     padding: 20px;
     font-size: 1.2em;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 100%;
+}
+
+#innerInputContainer input {
+    width: 20px;
+}
+
+#innerInputContainer label {
+    display: inline;
+}
+
+#innerInputContainer button {
+    margin-top: 10px;
 }
 
 nav {
